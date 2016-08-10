@@ -1,0 +1,30 @@
+{
+  "name": "app",
+  "main": "app.js",
+  "authors": [
+    "Marciano Schildmeijer <marciano@thecapitals.nl>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "less": "^2.7.1"
+  },
+  "overrides": {
+  "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "less/bootstrap.less"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+database/test.0
+database/test.1
+database/test.ns
+database/local.0
+database/local.ns
+database/journal
+database/mongod.lock
+database/._tmp
+bower_components
+node_modules
+debug
