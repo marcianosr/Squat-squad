@@ -27,10 +27,10 @@ var excercise = new Excercise({
   bodyparts: 'legs'
 });
 
-excercise.save(function (err, excercise) {
-  if (err) return console.error(err);
-});
+// excercise.save(function (err, excercise) {
+//   if (err) return console.error(err);
+// });
 
 Excercise.find({ name: 'Squat' }, function(err, success){
-    console.log(success)
+    //console.log(success)
 });
