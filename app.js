@@ -1,14 +1,18 @@
 var express = require('express');
 var path = require('path');
+
 var mongoose = require('./database/mongoose');
 var router = require('./routes/router');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
+var jwt = require('jsonwebtoken');
+
 var app = express();
 
 
 
-//app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, 'public/dist')));
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.use(bodyParser.urlencoded({ extended: true })); // https://github.com/expressjs/body-parser#bodyparserurlencodedoptions
 app.use(bodyParser.json());

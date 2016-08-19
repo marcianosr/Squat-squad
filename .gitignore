@@ -6,6 +6,8 @@ database/local.ns
 database/journal
 database/mongod.lock
 database/._tmp
+database/secret
 bower_components
 node_modules
 debug
+public/dist
